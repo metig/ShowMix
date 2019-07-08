@@ -1,0 +1,33 @@
+* {
+  /* font-family: arial,sans-serif; */
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+} 
+
+mat-card {
+  height: 600px;
+  padding: 20px;
+  margin: 30px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.mat-tab-group {
+  margin-bottom: 48px;
+  background-color: gray;
+  color: white;
+}
+
+.bottom {
+  position: relative;
+  top: 5px;
+  left: 110px;
+  width: 80%;
+  margin-right: 110px;
+} 
+
+h3 {
+  font-size: 25px;
+  padding-top: 30px;
+}

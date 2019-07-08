@@ -1,0 +1,55 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">  
+  <mat-toolbar color="primary">
+    <h2>Brows</h2>
+  </mat-toolbar>
+
+  <div class="mat-app-background">
+    <app-title-search (searchEvent)="doSearch($event)"> </app-title-search>
+  </div>
+
+  <mat-tab-group mat-align-tabs="start">
+
+    <mat-tab label="Main Page">
+      <div>
+        <h3>Main Page</h3>
+        <mat-card>
+          <app-landing></app-landing>
+        </mat-card> 
+      </div>
+    </mat-tab>
+
+    <mat-tab label="Summary">
+      <div>
+        <h3>Summary</h3>
+        <mat-card>
+            <app-show-result [tv]="showResult"></app-show-result> 
+        </mat-card>
+      </div>
+    </mat-tab>
+
+    <mat-tab label="Cast">
+      <div>
+        <h3>Cast</h3>
+        <app-tv-cast [cast]="showResult"></app-tv-cast>
+      </div>
+    </mat-tab>
+
+    <mat-tab label="Episodes">
+      <div>
+        <h3>Episodes</h3>
+        <app-tv-episode [epi]="showResult"></app-tv-episode>
+      </div>
+    </mat-tab>
+
+    <mat-tab label="About us">
+      <mat-card>
+          <div>
+              <h3>About us</h3>
+              <p>Brows is a collaborative project built by a talented team of student web developers at Kal Academy. Brows is built with Angular.</p>
+              <img src = "https://angular.io/assets/images/logos/angular/angular.svg" height="200">
+          </div>
+      </mat-card>
+    </mat-tab>
+  </mat-tab-group>
+</div>
