@@ -1,22 +1,35 @@
 * {
-  /* font-family: arial,sans-serif; */
+  
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 } 
+.toolbar{
+  background-color: rgb(37, 2, 2);
+  color: white;
+} 
+.card {
+  background-color: rgb(37, 2, 2);;
+}
+.mix {
+  color: rgb(238, 238, 4)
+}
 
 mat-card {
-  height: 600px;
   padding: 20px;
   margin: 30px;
   margin-left: 100px;
   margin-right: 100px;
+  height: 100vh;
+}
+.mat-app-background{
+   background-color: black
 }
 
 .mat-tab-group {
-  margin-bottom: 48px;
-  background-color: gray;
-  color: white;
+
+  background-color: black;
+  color: rgb(255, 255, 255);
 }
 
 .bottom {
@@ -30,4 +43,15 @@ mat-card {
 h3 {
   font-size: 25px;
   padding-top: 30px;
+}
+
+
+/* footer */
+#main-footer {
+  text-align: center;
+  position: bottom;
+  padding: 1rem;
+  background: black;
+  color: white;
+  height: 60px;
 }

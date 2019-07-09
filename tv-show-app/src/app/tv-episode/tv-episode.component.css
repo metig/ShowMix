@@ -1,8 +1,14 @@
 table {
   margin-top: 25px;
   border-collapse: collapse;
-  border: 2px lightgray;
+  border: 2px rgb(32, 30, 30);
   width: 100%;
+  text-decoration: none;
+}
+tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  color: black;
 }
 
 .column5 {

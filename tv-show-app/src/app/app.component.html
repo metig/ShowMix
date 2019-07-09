@@ -1,7 +1,6 @@
-<!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">  
-  <mat-toolbar color="primary">
-    <h2>Brows</h2>
+  <mat-toolbar class="toolbar">
+    <h2>show<span class="mix">Mix</span></h2>
   </mat-toolbar>
 
   <div class="mat-app-background">
@@ -12,8 +11,8 @@
 
     <mat-tab label="Main Page">
       <div>
-        <h3>Main Page</h3>
-        <mat-card>
+        <h3>Popular now</h3>
+        <mat-card class="card">
           <app-landing></app-landing>
         </mat-card> 
       </div>
@@ -22,7 +21,7 @@
     <mat-tab label="Summary">
       <div>
         <h3>Summary</h3>
-        <mat-card>
+        <mat-card class="card">
             <app-show-result [tv]="showResult"></app-show-result> 
         </mat-card>
       </div>
@@ -43,13 +42,17 @@
     </mat-tab>
 
     <mat-tab label="About us">
-      <mat-card>
+      <mat-card class="card">
           <div>
               <h3>About us</h3>
-              <p>Brows is a collaborative project built by a talented team of student web developers at Kal Academy. Brows is built with Angular.</p>
+              <p>ShowMix is a Tv show app built with Angular.</p>
               <img src = "https://angular.io/assets/images/logos/angular/angular.svg" height="200">
           </div>
       </mat-card>
     </mat-tab>
   </mat-tab-group>
+
+  <footer id="main-footer">
+      Copyright &copy; 2019
+    </footer>
 </div>

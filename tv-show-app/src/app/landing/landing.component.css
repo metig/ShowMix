@@ -1,13 +1,29 @@
 .align-purple {
-    text-align: left
+    text-align: center
+}
+ul {
+    list-style-type: none;
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto auto;
-    padding: 5px;
-    padding-top: 20px;
+    grid-gap: 8rem;
+
   }
+   
+  
+  a{
+    border: 3px rgb(73, 3, 44) solid;
+    background: cover;
+  }
+
+    a:hover {
+        background-color: black;
+        transition: ease-out;
+      }
+  
+ 
 
   img {
       float: left;
