@@ -19,7 +19,7 @@ ul {
   }
 
     a:hover {
-        background-color: black;
+        background-color: rgb(73, 3, 44);
         transition: ease-out;
       }
   
