@@ -1,6 +1,6 @@
 <div style="text-align:center">  
   <mat-toolbar class="toolbar">
-    <h2>show<span class="mix">Mix</span></h2>
+    <h2 class="title">Show<span class="mix">Mix</span></h2>
   </mat-toolbar>
 
   <div class="mat-app-background">
@@ -11,7 +11,7 @@
 
     <mat-tab label="Main Page">
       <div>
-        <h3>Popular now</h3>
+        <h3 class="font">Popular now</h3>
         <mat-card class="card">
           <app-landing></app-landing>
         </mat-card> 
@@ -30,7 +30,9 @@
     <mat-tab label="Cast">
       <div>
         <h3>Cast</h3>
+        <mat-card class="card">
         <app-tv-cast [cast]="showResult"></app-tv-cast>
+      </mat-card>
       </div>
     </mat-tab>
 
@@ -47,7 +49,8 @@
               <h3>About us</h3>
               <p>ShowMix is a Tv show app built with Angular.</p>
               <img src = "https://angular.io/assets/images/logos/angular/angular.svg" height="200">
-          </div>
+                 <p>Copyright &copy; 2019 </p>
+            </div>
       </mat-card>
     </mat-tab>
   </mat-tab-group>
